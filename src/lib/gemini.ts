@@ -84,7 +84,7 @@ export async function generateSlideContent(title: string, topic: string): Promis
           .slice(0, 150),
         points: content.points
           .slice(0, 3)
-          .map(point => point
+          .map((point: string) => point
             .replace(/[^\w\s.,]/g, '')
             .trim()
             .slice(0, 100)
@@ -163,7 +163,7 @@ export async function formatCustomContent(content: string, title: string): Promi
           .slice(0, 150),
         points: formattedContent.points
           .slice(0, 3)
-          .map(point => point
+          .map((point: string) => point
             .replace(/[^\w\s.,]/g, '')
             .trim()
             .slice(0, 100)

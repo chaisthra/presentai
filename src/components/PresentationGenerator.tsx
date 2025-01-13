@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { generateOutline, generateSlideContent, formatCustomContent } from '../lib/gemini';
 import pptxgen from 'pptxgenjs';
 import { templates } from '../templates';
